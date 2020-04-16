@@ -1,14 +1,14 @@
 version: '3.4'
 
 services:
-  in.api:
+  data-aggregate.in.api:
     env_file:
       - ./var1.env
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "60060:80"
-  out.api:
+  data-aggregate.out.api:
     env_file:
       - ./var1.env
     environment:

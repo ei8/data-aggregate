@@ -7,7 +7,7 @@ namespace works.ei8.Data.Aggregate.Port.Adapter.In.Api
 {
     public class ItemModule : NancyModule
     {
-        public ItemModule(ICommandSender commandSender) : base("/{avatarId}/data/aggregates")
+        public ItemModule(ICommandSender commandSender) : base("/data/aggregates")
         {
             this.Put("/{itemId}", async (parameters) =>
             {
@@ -18,7 +18,6 @@ namespace works.ei8.Data.Aggregate.Port.Adapter.In.Api
                         (bodyAsObject, bodyAsDictionary, expectedVersion) =>
                         {
                             return new ChangeAggregate(
-                                parameters.avatarId,
                                 Guid.Parse(parameters.itemId.ToString()),
                                 bodyAsObject.Aggregate.ToString(),
                                 Guid.Parse(bodyAsObject.AuthorId.ToString()),

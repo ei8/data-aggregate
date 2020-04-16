@@ -8,9 +8,8 @@ namespace works.ei8.Data.Aggregate.Application
 {
     public class ChangeAggregate : ICommand
     {
-        public ChangeAggregate(string avatarId, Guid id, string newAggregate, Guid authorId, int expectedVersion)
+        public ChangeAggregate(Guid id, string newAggregate, Guid authorId, int expectedVersion)
         {
-            AssertionConcern.AssertArgumentNotNull(avatarId, nameof(avatarId));
             AssertionConcern.AssertArgumentValid(
                 g => g != Guid.Empty,
                 id,
@@ -31,14 +30,11 @@ namespace works.ei8.Data.Aggregate.Application
                 nameof(expectedVersion)
                 );
 
-            this.AvatarId = avatarId;
             this.Id = id;
             this.NewAggregate = newAggregate;
             this.AuthorId = authorId;
             this.ExpectedVersion = expectedVersion;
         }
-
-        public string AvatarId { get; private set; }
 
         public Guid Id { get; private set; }
 

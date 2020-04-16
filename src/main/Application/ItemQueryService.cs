@@ -23,9 +23,8 @@ namespace works.ei8.Data.Aggregate.Application
             this.settingsService = settingsService;
         }
 
-        public async Task<ItemData> GetItemById(string avatarId, Guid id, CancellationToken token = default)
+        public async Task<ItemData> GetItemById(Guid id, CancellationToken token = default)
         {
-            AssertionConcern.AssertArgumentNotEmpty(avatarId, "Specified parameter cannot be null or empty.", nameof(avatarId));
             AssertionConcern.AssertArgumentValid(
                 g => g != Guid.Empty,
                 id,
@@ -35,8 +34,8 @@ namespace works.ei8.Data.Aggregate.Application
 
             // Using a random Guid for Author as we won't be saving anyway
             var eventSource = this.eventSourceFactory.Create(
-                Helper.UrlCombine(this.settingsService.EventSourcingInBaseUrl, avatarId) + "/",
-                Helper.UrlCombine(this.settingsService.EventSourcingOutBaseUrl, avatarId) + "/",
+                this.settingsService.EventSourcingInBaseUrl + "/",
+                this.settingsService.EventSourcingOutBaseUrl + "/",
                 Guid.NewGuid()
                 );
 

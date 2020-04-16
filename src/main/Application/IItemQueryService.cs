@@ -7,6 +7,6 @@ namespace works.ei8.Data.Aggregate.Application
 {
     public interface IItemQueryService
     {
-        Task<ItemData> GetItemById(string avatarId, Guid id, CancellationToken token = default);
+        Task<ItemData> GetItemById(Guid id, CancellationToken token = default);
     }
 }
