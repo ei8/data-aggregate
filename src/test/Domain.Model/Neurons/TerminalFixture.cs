@@ -1,11 +1,11 @@
-﻿// TODO: using org.neurul.Common.Test;
-//using org.neurul.Cortex.Common;
-//using org.neurul.Cortex.Domain.Model.Neurons;
+﻿// TODO: using neurUL.Common.Test;
+//using neurUL.Cortex.Common;
+//using neurUL.Cortex.Domain.Model.Neurons;
 //using System;
 //using System.Linq;
 //using Xunit;
 
-//namespace works.ei8.Data.Aggregate.Domain.Model.Test.Neurons.TerminalFixture.given
+//namespace ei8.Data.Aggregate.Domain.Model.Test.Neurons.TerminalFixture.given
 //{
 //    public abstract class Context : TestContext<Terminal>
 //    {

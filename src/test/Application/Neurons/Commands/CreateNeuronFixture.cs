@@ -1,10 +1,10 @@
-﻿// TODO: using org.neurul.Common.Test;
-//using org.neurul.Cortex.Application.Neurons;
-//using org.neurul.Cortex.Application.Neurons.Commands;
+﻿// TODO: using neurUL.Common.Test;
+//using neurUL.Cortex.Application.Neurons;
+//using neurUL.Cortex.Application.Neurons.Commands;
 //using System;
 //using Xunit;
 
-//namespace works.ei8.Data.Aggregate.Application.Test.Neurons.Commands.CreateNeuronFixture.given
+//namespace ei8.Data.Aggregate.Application.Test.Neurons.Commands.CreateNeuronFixture.given
 //{
 //    public abstract class ConstructingContext : TestContext<CreateNeuron>
 //    {

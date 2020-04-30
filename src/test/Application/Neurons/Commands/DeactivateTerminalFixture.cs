@@ -1,5 +1,5 @@
-﻿// TODO: using org.neurul.Common.Test;
-//using org.neurul.Cortex.Application.Neurons.Commands;
+﻿// TODO: using neurUL.Common.Test;
+//using neurUL.Cortex.Application.Neurons.Commands;
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
@@ -7,7 +7,7 @@
 //using System.Threading.Tasks;
 //using Xunit;
 
-//namespace works.ei8.Data.Aggregate.Application.Test.Neurons.Commands.DeactivateTerminalFixture.given
+//namespace ei8.Data.Aggregate.Application.Test.Neurons.Commands.DeactivateTerminalFixture.given
 //{
 //    public abstract class ConstructingContext : TestContext<DeactivateTerminal>
 //    {

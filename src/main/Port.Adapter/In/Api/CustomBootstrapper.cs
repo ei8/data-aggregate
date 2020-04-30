@@ -2,13 +2,13 @@
 using CQRSlite.Routing;
 using Nancy;
 using Nancy.TinyIoc;
-using org.neurul.Common.Http;
+using neurUL.Common.Http;
 using System;
-using works.ei8.EventSourcing.Client;
-using works.ei8.Data.Aggregate.Application;
-using works.ei8.Data.Aggregate.Port.Adapter.IO.Process.Services;
+using ei8.EventSourcing.Client;
+using ei8.Data.Aggregate.Application;
+using ei8.Data.Aggregate.Port.Adapter.IO.Process.Services;
 
-namespace works.ei8.Data.Aggregate.Port.Adapter.In.Api
+namespace ei8.Data.Aggregate.Port.Adapter.In.Api
 {
     public class CustomBootstrapper : DefaultNancyBootstrapper
     {

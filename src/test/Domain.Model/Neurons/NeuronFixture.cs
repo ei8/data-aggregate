@@ -1,12 +1,12 @@
 ﻿// TODO: using CQRSlite.Events;
-//using org.neurul.Common.Test;
-//using org.neurul.Cortex.Domain.Model.Neurons;
+//using neurUL.Common.Test;
+//using neurUL.Cortex.Domain.Model.Neurons;
 //using System;
 //using System.Linq;
-//using works.ei8.EventSourcing.Client.In;
+//using ei8.EventSourcing.Client.In;
 //using Xunit;
 
-//namespace works.ei8.Data.Aggregate.Domain.Model.Test.Neurons.NeuronFixture.given
+//namespace ei8.Data.Aggregate.Domain.Model.Test.Neurons.NeuronFixture.given
 //{
 //    public abstract class Context : TestContext<Neuron>
 //    {

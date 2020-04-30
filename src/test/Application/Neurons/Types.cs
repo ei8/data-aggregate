@@ -9,11 +9,11 @@
 //using System.Text;
 //using System.Threading;
 //using System.Threading.Tasks;
-//using works.ei8.EventSourcing.Client;
-//using works.ei8.EventSourcing.Client.Out;
-//using works.ei8.EventSourcing.Common;
+//using ei8.EventSourcing.Client;
+//using ei8.EventSourcing.Client.Out;
+//using ei8.EventSourcing.Common;
 
-//namespace works.ei8.Data.Aggregate.Application.Test.Neurons
+//namespace ei8.Data.Aggregate.Application.Test.Neurons
 //{
 //    public abstract class ConstructingContext<TAggregate, THandler, TCommand> : ConditionalWhenSpecification<TAggregate, THandler, TCommand> where TAggregate : AggregateRoot where THandler : class where TCommand : ICommand
 //    {

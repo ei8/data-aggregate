@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace works.ei8.Data.Aggregate.Application
+namespace ei8.Data.Aggregate.Application
 {
     public struct Messages
     {

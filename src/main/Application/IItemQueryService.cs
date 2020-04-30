@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using works.ei8.Data.Aggregate.Common;
+using ei8.Data.Aggregate.Common;
 
-namespace works.ei8.Data.Aggregate.Application
+namespace ei8.Data.Aggregate.Application
 {
     public interface IItemQueryService
     {

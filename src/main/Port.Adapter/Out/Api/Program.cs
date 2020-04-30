@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace works.ei8.Data.Aggregate.Port.Adapter.Out.Api
+namespace ei8.Data.Aggregate.Port.Adapter.Out.Api
 {
     public class Program
     {

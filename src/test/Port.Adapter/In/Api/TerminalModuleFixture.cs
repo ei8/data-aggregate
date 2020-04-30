@@ -2,14 +2,14 @@
 //using Moq;
 //using Nancy;
 //using Nancy.Testing;
-//using org.neurul.Common.Test;
-//using org.neurul.Cortex.Application.Neurons.Commands;
+//using neurUL.Common.Test;
+//using neurUL.Cortex.Application.Neurons.Commands;
 //using System;
 //using System.Threading;
 //using System.Threading.Tasks;
 //using Xunit;
 
-//namespace works.ei8.Data.Aggregate.Port.Adapter.In.Api.Test.TerminalModuleFixture.given
+//namespace ei8.Data.Aggregate.Port.Adapter.In.Api.Test.TerminalModuleFixture.given
 //{
 //    public abstract class Context : TestContext<Browser>
 //    {

@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using System;
 
-namespace works.ei8.Data.Aggregate.Domain.Model
+namespace ei8.Data.Aggregate.Domain.Model
 {
     public class AggregateChanged : IEvent
     {

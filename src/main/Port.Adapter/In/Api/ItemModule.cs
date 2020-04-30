@@ -1,9 +1,9 @@
 ﻿using CQRSlite.Commands;
 using Nancy;
 using System;
-using works.ei8.Data.Aggregate.Application;
+using ei8.Data.Aggregate.Application;
 
-namespace works.ei8.Data.Aggregate.Port.Adapter.In.Api
+namespace ei8.Data.Aggregate.Port.Adapter.In.Api
 {
     public class ItemModule : NancyModule
     {

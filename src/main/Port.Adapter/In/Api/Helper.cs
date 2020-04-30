@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace works.ei8.Data.Aggregate.Port.Adapter.In.Api
+namespace ei8.Data.Aggregate.Port.Adapter.In.Api
 {
     public static class Helper
     {

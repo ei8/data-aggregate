@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Nancy.Owin;
 
-namespace works.ei8.Data.Aggregate.Port.Adapter.In.Api
+namespace ei8.Data.Aggregate.Port.Adapter.In.Api
 {
     public class Startup
     {

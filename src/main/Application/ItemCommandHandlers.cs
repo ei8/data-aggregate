@@ -1,14 +1,14 @@
 ﻿using CQRSlite.Commands;
-using org.neurul.Common.Domain.Model;
-using org.neurul.Common.Http;
+using neurUL.Common.Domain.Model;
+using neurUL.Common.Http;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using works.ei8.EventSourcing.Client;
-using works.ei8.EventSourcing.Client.In;
-using works.ei8.Data.Aggregate.Domain.Model;
+using ei8.EventSourcing.Client;
+using ei8.EventSourcing.Client.In;
+using ei8.Data.Aggregate.Domain.Model;
 
-namespace works.ei8.Data.Aggregate.Application
+namespace ei8.Data.Aggregate.Application
 {
     public class ItemCommandHandlers : 
         ICancellableCommandHandler<ChangeAggregate>        
