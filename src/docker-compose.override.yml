@@ -1,17 +1,17 @@
 version: '3.4'
 
 services:
-  data-aggregate.in.api:
+  data.aggregate.in.api:
     env_file:
       - ./var1.env
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - 192.168.8.131:60060:80
-  data-aggregate.out.api:
+  data.aggregate.out.api:
     env_file:
       - ./var1.env
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - 192.168.8.131:60061:80
+networks:
+    default:
+        external:
+            name: sample_default
