@@ -27,7 +27,12 @@ namespace ei8.Data.Aggregate.Domain.Model
 
         public void ChangeAggregate(string newAggregate)
         {
-            AssertionConcern.AssertArgumentNotNull(newAggregate, nameof(newAggregate));
+            AssertionConcern.AssertArgumentValid(
+                na => na == null || na.Trim().Length > 0,
+                newAggregate,
+                "Specified aggregate may only either be null or a non-zero length string.",
+                nameof(newAggregate)
+                );
 
             if (newAggregate != this.Aggregate)
                 base.ApplyChange(new AggregateChanged(this.Id, newAggregate));
