@@ -30,9 +30,8 @@ namespace ei8.Data.Aggregate.Domain.Model
             AssertionConcern.AssertArgumentValid(
                 na => na == null || na.Trim().Length > 0,
                 newAggregate,
-                "Specified aggregate may only either be null or a non-zero length string.",
-                nameof(newAggregate)
-                );
+                "Specified aggregate must either be null or not an empty string.",
+                nameof(newAggregate));
 
             if (newAggregate != this.Aggregate)
                 base.ApplyChange(new AggregateChanged(this.Id, newAggregate));

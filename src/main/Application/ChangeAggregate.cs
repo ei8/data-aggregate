@@ -16,7 +16,6 @@ namespace ei8.Data.Aggregate.Application
                 Messages.Exception.InvalidId,
                 nameof(id)
                 );
-            AssertionConcern.AssertArgumentNotNull(newAggregate, nameof(newAggregate));
             AssertionConcern.AssertArgumentValid(
                 g => g != Guid.Empty,
                 authorId,
